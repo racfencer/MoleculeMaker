@@ -1,10 +1,7 @@
 package moleculeMaker;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.io.File;
 
-import javax.swing.JFileChooser;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
@@ -75,7 +72,7 @@ public class XML_Problem
 			
 			DOMSource source = new DOMSource(doc);
 			StreamResult result = new StreamResult(new File(saver.getDestination()));
-			StreamResult result2 = new StreamResult(System.out);
+			//StreamResult result2 = new StreamResult(System.out);
 
 			try {
 				transformer.transform(source, result);
@@ -208,7 +205,7 @@ public class XML_Problem
 					loc2.setAttributeNode(y2);
 				arrow.appendChild(loc2);
 				org.w3c.dom.Element bOrder = doc.createElement("Order");
-					bOrder.appendChild(doc.createTextNode(""+a.getOrder()));
+					bOrder.appendChild(doc.createTextNode(""+a.getOrder()+1));
 				arrow.appendChild(bOrder);
 		}
 		

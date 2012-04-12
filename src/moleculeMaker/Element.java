@@ -18,7 +18,7 @@ public class Element extends MoleculeComponent{
 		dragging = false;
 		name = "C";
 		electrons = 0;
-		charge = 1;
+		charge = 0;
 		type = 0;
 	}
 	

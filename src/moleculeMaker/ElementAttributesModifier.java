@@ -13,8 +13,6 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.JTextField;
-import javax.swing.event.DocumentEvent;
-import javax.swing.event.DocumentListener;
 
 
 @SuppressWarnings("serial")
@@ -26,9 +24,6 @@ public class ElementAttributesModifier extends JPanel implements ActionListener
 	JButton save;
 	JComboBox electronCount;
 	ButtonGroup charge;
-	
-	// TODO Load an elements attributes from ElementList.getSelected()
-	// TODO Save an elements new attributes
 	
 	public ElementAttributesModifier(Element element)
 	{

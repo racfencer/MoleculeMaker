@@ -75,9 +75,9 @@ public class AttributesModifier extends JPanel
 		chargePanel.setLayout(new FlowLayout());
 		JLabel chargeLabel = new JLabel("Charge: ");
 		charge = new ButtonGroup();
-		JRadioButton pos = new JRadioButton("Positive+");
-		JRadioButton neu = new JRadioButton("Neutral");
-		JRadioButton neg = new JRadioButton("Negative-");
+		JRadioButton pos = new JRadioButton("Neutral");
+		JRadioButton neu = new JRadioButton("Negative-");
+		JRadioButton neg = new JRadioButton("Positive+");
 		charge.add(pos);
 		charge.add(neu);
 		charge.add(neg);
